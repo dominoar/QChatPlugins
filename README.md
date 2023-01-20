@@ -2,7 +2,7 @@
 
 [QChatGPT]:https://github.com/RockChinQ/QChatGPT
 
-[ChatWaifu]:https://github.com/MuBai-He/ChatWaifu-marai
+[ChatWaifu]:https://pan.baidu.com/s/1vLspuqNrElqH4JwCrQ4mGA?pwd=domi
 
 ### 项目插件安装方式
 
@@ -17,10 +17,8 @@
 * 安装后自动启用无需配置
 
 * __安装__
-    + 下载并安装好[ChatWaifu]项目。
-    + 在 [QChatGPT] 根目录下创建名称为 __model__ (必须)的文件夹。
-    + 将 [ChatWaifu] 项目移动到model文件夹下。
-    + 替换 [ChatWaifu] 项目的 <kdb>ChatWaifu_marai.py</kdb> 文件
+    + 下载并解压好[ChatWaifu]项目。
+    + 移动 model 文件夹到 [QChatGPT] 项目根目录下。
     + 安装python库
   ```bash
   pip install numba librosa numpy scipy torch unidecode openjtalk>=0.3.0.dev2 jamo pypinyin jieba protobuf cn2an inflect eng_to_ipa ko_pron indic_transliteration num_thai opencc pyChatGPT vosk sounddevice miraicle
