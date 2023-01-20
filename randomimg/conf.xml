@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!--随机图片API-->
+    <api api_name="LoliAPI">
+        <!--图片获取地址-->
+        <api_url>
+            <!--随机图片也是主链接，将会与参数进行拼接-->
+            <!--有些API是用参数形式获得手机或电脑端的图片，请把参数填在program中-->
+            <random>https://www.loliapi.com/acg/</random>
+            <!--电脑-->
+            <pc>https://www.loliapi.com/acg/pc/</pc>
+            <!--手机-->
+            <pe>https://www.loliapi.com/acg/pe/</pe>
+        </api_url>
+    </api>
+    <api api_name="樱花API">
+        <api_url>
+            <random>https://www.dmoe.cc/random.php</random>
+        </api_url>
+    </api>
+    <api api_name="随机涩图API">
+        <api_url>
+            <random>https://api.anosu.top/img/</random>
+            <r18>https://moe.jitsu.top/img/?sort=r18</r18>
+            <pc>https://api.anosu.top/img/?sort=pc</pc>
+            <pe>https://api.anosu.top/img/?sort=mp</pe>
+            <pixiv>https://api.anosu.top/img/?sort=pixiv</pixiv>
+        </api_url>
+    </api>
+</root>

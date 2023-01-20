@@ -1,0 +1,14 @@
+{
+    "ChatWaifu": {
+        "path": "plugins/ChatWaifu/main.py",
+        "enabled": true
+    },
+    "定向WEB资源爬取": {
+        "path": "plugins/galgame/main.py",
+        "enabled": true
+    },
+    "Hello": {
+        "path": "plugins/randomimg/main.py",
+        "enabled": true
+    }
+}
