@@ -2,7 +2,7 @@
 
 [QChatGPT]:https://github.com/RockChinQ/QChatGPT
 
-[ChatWaifu]:https://pan.baidu.com/s/1vLspuqNrElqH4JwCrQ4mGA?pwd=domi
+[ChatWaifu]:https://pan.baidu.com/s/1iIUfPSbnqFlYtdxMmcsAUw?pwd=domi
 
 ### 项目插件安装方式
 
@@ -23,7 +23,8 @@
   ```bash
   pip install numba librosa numpy scipy torch unidecode openjtalk>=0.3.0.dev2 jamo pypinyin jieba protobuf cn2an inflect eng_to_ipa ko_pron indic_transliteration num_thai opencc pyChatGPT vosk sounddevice miraicle
   ```
-    + 即可完成安装使用
+    + 即可完成安装使用。
+    + 你可以在QchatGPT项根目录的config.py中配置语言模型。
 
 #### Ranimg 插件：
 
