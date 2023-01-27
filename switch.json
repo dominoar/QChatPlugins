@@ -1,4 +1,8 @@
 {
+    "BanMassage": {
+        "path": "plugins/BanMassage/main.py",
+        "enabled": true
+    },
     "ChatWaifu": {
         "path": "plugins/ChatWaifu/main.py",
         "enabled": true
