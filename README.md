@@ -2,7 +2,7 @@
 
 [QChatGPT]:https://github.com/RockChinQ/QChatGPT
 
-[ChatWaifu]:https://pan.baidu.com/s/1iIUfPSbnqFlYtdxMmcsAUw?pwd=domi
+[ChatWaifu]:链接：https://pan.baidu.com/s/1UuBV2x0TQ7s90he6dQ-EjA?pwd=domi
 
 ### 项目插件安装方式
 
