@@ -5,6 +5,8 @@
 @File           : main.py
 @LastEditTime   : 
 """
+import re
+
 import model.ChatWaifu.ChatWaifu_marai
 from pkg.plugin.models import *
 from pkg.plugin.host import EventContext, PluginHost
@@ -24,15 +26,15 @@ class HelloPlugin(Plugin):
     def __init__(self, plugin_host: PluginHost):
         pass
 
-    # 当收到群消息时触发
+    # 当收到文字消息时触发
     @on(NormalMessageResponded)
     def group_normal_message_received(self, event: EventContext, **kwargs):
         msg = kwargs["response_text"]
-        if len(msg) < 100:
+        if len(msg) < 100 and re.search('.roup', kwargs['launcher_type']):
             voice = model.ChatWaifu.ChatWaifu_marai.process_mod(msg)
             kwargs['host'].send_group_message(kwargs["launcher_id"], msg)
             kwargs['host'].send_group_message(kwargs["launcher_id"], voice)
-        event.prevent_default()
+            event.prevent_default()
 
     # 插件卸载时触发
     def __del__(self):
