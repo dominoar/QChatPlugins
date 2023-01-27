@@ -5,7 +5,7 @@
         <!--图片获取地址-->
         <api_url>
             <!--随机图片也是主链接，将会与参数进行拼接-->
-            <!--有些API是用参数形式获得手机或电脑端的图片-->
+            <!--有些API是用参数形式获得手机或电脑端的图片，请把参数填在program中-->
             <random>https://www.loliapi.com/acg/</random>
             <!--电脑-->
             <pc>https://www.loliapi.com/acg/pc/</pc>
