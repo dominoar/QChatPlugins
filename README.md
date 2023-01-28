@@ -2,7 +2,7 @@
 
 [QChatGPT]:https://github.com/RockChinQ/QChatGPT
 
-[ChatWaifu]:https://github.com/dominoar/QchatPlugins/releases
+[model]:https://github.com/dominoar/QchatPlugins/releases
 
 [plugins]:https://github.com/dominoar/QchatPlugins/releases
 
@@ -13,7 +13,7 @@
 * 安装后自动启用无需配置
 
 * __安装__
-    + 下载并解压好 [ChatWaifu] 与 [plugins] 压缩文件，解压到项目根目录。
+    + 下载并解压好 [model] 与 [plugins] 压缩文件，解压到项目根目录。
     + 安装python库，注意使用下列命令后你无需再安装此仓库的其他依赖，因为requirements.txt文件包含所有的依赖
     ```bash
     pip install -r requirements.txt
