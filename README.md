@@ -46,5 +46,5 @@ pip install lxml parsel requests
 ```bash
 pip install requests
 ```
-
+d
 * 在聊天窗口使用下面指令`![galgame|美少女游戏] [站点名(如：量子)] [要搜索的资源内容] [页面(可选)]`
