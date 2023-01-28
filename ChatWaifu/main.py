@@ -5,8 +5,12 @@
 @File           : main.py
 @LastEditTime   : 
 """
+import os
+import platform
 import re
+import traceback
 
+import mirai
 import model.ChatWaifu.ChatWaifu_marai
 from pkg.plugin.models import *
 from pkg.plugin.host import EventContext, PluginHost
@@ -14,6 +18,49 @@ from pkg.plugin.host import EventContext, PluginHost
 """
 接入ChatWaifu的语音生成程序，您需要将ChatWaifu文件夹放在model中
 """
+
+
+def process_mod(answer):
+    """
+    :param answer 文本消息，转换为语音
+    """
+
+    try:
+        # 删除已有的文件避免卡在命令行
+        os.remove("output.pcm")
+        os.remove("output.wav")
+        os.remove("output.silk")
+        if len(answer) > 100:
+            return answer
+        if re.search('[ぁ-んァ-ン]', answer):
+            model.ChatWaifu.ChatWaifu_marai.generateSound(answer, language="jp")
+        else:
+            model.ChatWaifu.ChatWaifu_marai.generateSound("[ZH]" + answer + "[ZH]", language="ch")
+
+        if platform.system() == "Linux":
+            cmd = """ffmpeg -i .\\output.wav -f s16le .\\output.pcm & \
+            .\\plugins\\ChatWaifu\\silk-v3-decoder\\converter.sh  .\\output.pcm .\\output.silk -tencent"""
+        else:
+            cmd = """.\\plugins\\ChatWaifu\\ffmpeg\\ffmpeg.exe -i .\\output.wav -f s16le .\\output.pcm & \
+            .\\plugins\\ChatWaifu\\silk-v3-decoder\\windows\\silk_v3_encoder.exe .\\output.pcm .\\output.silk -tencent"""
+        trans_ok = os.system(cmd)
+        # 判断是否成功
+        if trans_ok == 0:
+            logging.info("语音silk生成成功！ヽ(￣▽￣)ﾉ")
+        else:
+            logging.error("""
+            注意：语音可能生成失败！
+            1、如果你是Linxu平台，请检查你是否安装了对应linux发行版的ffmpeg。
+            2、将你的错误截图反馈给开发者(也就是我) @ Dominoar&多米诺艾尔
+            """)
+
+        ai_voice = mirai.Voice(path='output.silk')
+        return ai_voice
+    except FileNotFoundError:
+        pass
+    except Exception:
+        traceback.print_exc()
+        return ''
 
 
 # 注册插件
@@ -30,8 +77,8 @@ class HelloPlugin(Plugin):
     @on(NormalMessageResponded)
     def group_normal_message_received(self, event: EventContext, **kwargs):
         msg = kwargs["response_text"]
-        if len(msg) < 100 and re.search('.roup', kwargs['launcher_type']):
-            voice = model.ChatWaifu.ChatWaifu_marai.process_mod(msg)
+        if len(msg) < 100:
+            voice = process_mod(msg)
             kwargs['host'].send_group_message(kwargs["launcher_id"], msg)
             kwargs['host'].send_group_message(kwargs["launcher_id"], voice)
             event.prevent_default()

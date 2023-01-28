@@ -1,0 +1,106 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="123" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="81">
+            <item index="0" class="java.lang.String" itemvalue="eng-to-ipa" />
+            <item index="1" class="java.lang.String" itemvalue="miraicle" />
+            <item index="2" class="java.lang.String" itemvalue="numba" />
+            <item index="3" class="java.lang.String" itemvalue="protobuf" />
+            <item index="4" class="java.lang.String" itemvalue="joblib" />
+            <item index="5" class="java.lang.String" itemvalue="threadpoolctl" />
+            <item index="6" class="java.lang.String" itemvalue="scikit-learn" />
+            <item index="7" class="java.lang.String" itemvalue="roman" />
+            <item index="8" class="java.lang.String" itemvalue="h11" />
+            <item index="9" class="java.lang.String" itemvalue="pycparser" />
+            <item index="10" class="java.lang.String" itemvalue="frozenlist" />
+            <item index="11" class="java.lang.String" itemvalue="trio" />
+            <item index="12" class="java.lang.String" itemvalue="appdirs" />
+            <item index="13" class="java.lang.String" itemvalue="certifi" />
+            <item index="14" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="15" class="java.lang.String" itemvalue="proces" />
+            <item index="16" class="java.lang.String" itemvalue="pypinyin" />
+            <item index="17" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="18" class="java.lang.String" itemvalue="pydantic" />
+            <item index="19" class="java.lang.String" itemvalue="jamo" />
+            <item index="20" class="java.lang.String" itemvalue="num-thai" />
+            <item index="21" class="java.lang.String" itemvalue="audioread" />
+            <item index="22" class="java.lang.String" itemvalue="click" />
+            <item index="23" class="java.lang.String" itemvalue="wsproto" />
+            <item index="24" class="java.lang.String" itemvalue="attrs" />
+            <item index="25" class="java.lang.String" itemvalue="cn2an" />
+            <item index="26" class="java.lang.String" itemvalue="regex" />
+            <item index="27" class="java.lang.String" itemvalue="PySocks" />
+            <item index="28" class="java.lang.String" itemvalue="backports.functools-lru-cache" />
+            <item index="29" class="java.lang.String" itemvalue="resampy" />
+            <item index="30" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="31" class="java.lang.String" itemvalue="librosa" />
+            <item index="32" class="java.lang.String" itemvalue="async-generator" />
+            <item index="33" class="java.lang.String" itemvalue="idna" />
+            <item index="34" class="java.lang.String" itemvalue="decorator" />
+            <item index="35" class="java.lang.String" itemvalue="jieba" />
+            <item index="36" class="java.lang.String" itemvalue="async-timeout" />
+            <item index="37" class="java.lang.String" itemvalue="undetected-chromedriver" />
+            <item index="38" class="java.lang.String" itemvalue="trio-websocket" />
+            <item index="39" class="java.lang.String" itemvalue="cffi" />
+            <item index="40" class="java.lang.String" itemvalue="markdownify" />
+            <item index="41" class="java.lang.String" itemvalue="openjtalk" />
+            <item index="42" class="java.lang.String" itemvalue="llvmlite" />
+            <item index="43" class="java.lang.String" itemvalue="numpy" />
+            <item index="44" class="java.lang.String" itemvalue="requests" />
+            <item index="45" class="java.lang.String" itemvalue="sniffio" />
+            <item index="46" class="java.lang.String" itemvalue="pyChatGPT" />
+            <item index="47" class="java.lang.String" itemvalue="websocket-client" />
+            <item index="48" class="java.lang.String" itemvalue="exceptiongroup" />
+            <item index="49" class="java.lang.String" itemvalue="sounddevice" />
+            <item index="50" class="java.lang.String" itemvalue="selenium" />
+            <item index="51" class="java.lang.String" itemvalue="urllib3" />
+            <item index="52" class="java.lang.String" itemvalue="Cython" />
+            <item index="53" class="java.lang.String" itemvalue="outcome" />
+            <item index="54" class="java.lang.String" itemvalue="websockets" />
+            <item index="55" class="java.lang.String" itemvalue="PyVirtualDisplay" />
+            <item index="56" class="java.lang.String" itemvalue="scipy" />
+            <item index="57" class="java.lang.String" itemvalue="indic-transliteration" />
+            <item index="58" class="java.lang.String" itemvalue="OpenCC" />
+            <item index="59" class="java.lang.String" itemvalue="six" />
+            <item index="60" class="java.lang.String" itemvalue="typer" />
+            <item index="61" class="java.lang.String" itemvalue="vosk" />
+            <item index="62" class="java.lang.String" itemvalue="packaging" />
+            <item index="63" class="java.lang.String" itemvalue="torch" />
+            <item index="64" class="java.lang.String" itemvalue="pooch" />
+            <item index="65" class="java.lang.String" itemvalue="toml" />
+            <item index="66" class="java.lang.String" itemvalue="sortedcontainers" />
+            <item index="67" class="java.lang.String" itemvalue="tqdm" />
+            <item index="68" class="java.lang.String" itemvalue="soundfile" />
+            <item index="69" class="java.lang.String" itemvalue="srt" />
+            <item index="70" class="java.lang.String" itemvalue="Unidecode" />
+            <item index="71" class="java.lang.String" itemvalue="colorama" />
+            <item index="72" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="73" class="java.lang.String" itemvalue="inflect" />
+            <item index="74" class="java.lang.String" itemvalue="aiohttp" />
+            <item index="75" class="java.lang.String" itemvalue="ko-pron" />
+            <item index="76" class="java.lang.String" itemvalue="multidict" />
+            <item index="77" class="java.lang.String" itemvalue="yarl" />
+            <item index="78" class="java.lang.String" itemvalue="aiosignal" />
+            <item index="79" class="java.lang.String" itemvalue="opencc" />
+            <item index="80" class="java.lang.String" itemvalue="nonebot" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
