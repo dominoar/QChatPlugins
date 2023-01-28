@@ -1,10 +1,10 @@
-## QChatGPT项目，随机图片插件
+## 基于 QChatGPT项目，个人开发插件合集
 
 [QChatGPT]:https://github.com/RockChinQ/QChatGPT
 
-[ChatWaifu]:https://pan.baidu.com/s/1UuBV2x0TQ7s90he6dQ-EjA?pwd=domi
+[ChatWaifu]:https://github.com/dominoar/QchatPlugins/releases
 
-[plugins]:https:baidu.com/s
+[plugins]:https://github.com/dominoar/QchatPlugins/releases
 
 ### 使用说明
 
@@ -13,7 +13,7 @@
 * 安装后自动启用无需配置
 
 * __安装__
-    + 下载并解压好 [ChatWaifu] 与 [plugins] 项目，解压到项目根目录。
+    + 下载并解压好 [ChatWaifu] 与 [plugins] 压缩文件，解压到项目根目录。
     + 安装python库，注意使用下列命令后你无需再安装此仓库的其他依赖，因为requirements.txt文件包含所有的依赖
     ```bash
     pip install -r requirements.txt
