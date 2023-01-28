@@ -2,7 +2,9 @@
 
 [QChatGPT]:https://github.com/RockChinQ/QChatGPT
 
-[ChatWaifu]:链接：https://pan.baidu.com/s/1UuBV2x0TQ7s90he6dQ-EjA?pwd=domi
+[ChatWaifu]:https://pan.baidu.com/s/1UuBV2x0TQ7s90he6dQ-EjA?pwd=domi
+
+[plugins]:https:baidu.com/s
 
 ### 项目插件安装方式
 
@@ -17,15 +19,15 @@
 * 安装后自动启用无需配置
 
 * __安装__
-    + 下载并解压好[ChatWaifu]项目。
-    + 移动 model 文件夹到 [QChatGPT] 项目根目录下。
-    + 安装python库
-  ```bash
-  pip install numba librosa numpy scipy torch unidecode openjtalk>=0.3.0.dev2 jamo pypinyin jieba protobuf cn2an inflect eng_to_ipa ko_pron indic_transliteration num_thai opencc pyChatGPT vosk sounddevice miraicle
-  ```
-    + 即可完成安装使用。
+    + 下载并解压好 [ChatWaifu] 与 [plugins] 项目，解压到项目根目录。
+    + 安装python库，注意使用下列命令后你无需再安装此仓库的其他依赖，因为requirements.txt文件包含所有的依赖
+    ```bash
+    pip install -r requirements.txt
+    ```
+    + 如果你是linux系统，请先安装对应linux发行版的软件包 ffmpeg (
+      注意：Linux代码未经过测试，理论上是可以运行的，如尝试后错误，请及时反馈修复)
     + 你可以在QchatGPT项根目录的config.py中配置语言模型。
-      + 在QChatGPT根目录config.py的末尾添加
+        + 在QChatGPT根目录config.py的末尾添加
       ```python
       waifu_voice = 0
       """ 将你想要的语音模型填在上方的等号后面
