@@ -25,6 +25,17 @@
   ```
     + 即可完成安装使用。
     + 你可以在QchatGPT项根目录的config.py中配置语言模型。
+      + 在QChatGPT根目录config.py的末尾添加
+      ```python
+      waifu_voice = 0
+      """ 将你想要的语音模型填在上方的等号后面
+      0       綾地寧々
+      1       在原七海
+      2       小茸
+      3       唐乐吟
+      4       随机
+      """
+      ```
 
 #### Ranimg 插件：
 
@@ -46,5 +57,15 @@ pip install lxml parsel requests
 ```bash
 pip install requests
 ```
-d
+
 * 在聊天窗口使用下面指令`![galgame|美少女游戏] [站点名(如：量子)] [要搜索的资源内容] [页面(可选)]`
+
+#### BanList插件：
+
+* 插件可以屏蔽匹配到的关键词不做处理，非常适合搭配其他框架使用的时候，屏蔽指令，避免回复过多（之后会单独开发一个插件）。
+* 安装python库
+* 在QChatGPT根目录的plugins/Banlist/banlist.yaml中配置屏蔽词
+
+```bash
+pip install pyYAML
+```
