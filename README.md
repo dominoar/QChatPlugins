@@ -6,12 +6,6 @@
 
 [plugins]:https:baidu.com/s
 
-### 项目插件安装方式
-
-    方式一： 在QQ聊天窗口使用 !plugins 指令进行安装所有插件
-
-    方式二： 下载此源码 ZIP 文件解压到 QChatGPT/plugins 目录下
-
 ### 使用说明
 
 #### ChatWaifu语音转换插件
