@@ -1,6 +1,6 @@
 # 字符完全匹配时
-perfect: [ 'resin','今日女友' ]
+perfect: [ '今日女友' ]
 # 包含字符时，用|来分割每一词和regex原理相同只需要选一个也可以
 contain: ""
 # 正则表达式，用|来分割每一个正则表达式
-regex: "^/|^约稿"
+regex: "^/|^约稿|^rr|^marry|^novelai|^nai|^rryth|^sai|^resin|^help|^status|^help|^timer|^translate|^usage"

@@ -7,6 +7,10 @@
         "path": "plugins/ChatWaifu/main.py",
         "enabled": true
     },
+    "NovelAI故事插件~": {
+        "path": "plugins/NovelAi/main.py",
+        "enabled": true
+    },
     "定向WEB资源爬取": {
         "path": "plugins/galgame/main.py",
         "enabled": true

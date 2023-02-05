@@ -20,8 +20,8 @@
     ```
     + 如果你是linux系统，请先安装对应linux发行版的软件包 ffmpeg (
       注意：Linux代码未经过测试，理论上是可以运行的，如尝试后错误，请及时反馈修复)
-    + 你可以在QchatGPT项根目录的config.py中配置语言模型。
-        + 在QChatGPT根目录config.py的末尾添加
+    + 你可以在QchatGPT项根目录的plugins/ChatWaifu/config.py中配置语言模型。
+        + 在config.py中有如下的配置项目，选择你喜欢的模型即可
       ```python
       waifu_voice = 0
       """ 将你想要的语音模型填在上方的等号后面
