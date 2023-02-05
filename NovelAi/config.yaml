@@ -1,0 +1,38 @@
+account:
+  # 你的NovelAi用户账号
+  user: ""
+  # 你的NovelAi用户密码
+  password: ""
+
+#故事设置
+story:
+  # 故事讲述者型号，可以到官网了解模型区别
+  # "Krake" "Sigurd" "Euterpe"
+  mode: "Euterpe"
+  # 每次对话故事生成文本长度(NovelAi Story为英文，经过翻译为中文)
+  text_length: 100
+  # 屏蔽词列表
+  banlist: [ "傻逼","白痴","二货" ]
+
+  # 是否开启中文(机翻)
+  # "zh"中文 "en"英文,不翻译
+  language: "zh"
+
+
+# 翻译接口
+Translate:
+  # 你选择了哪一个翻译接口？
+  # baidu google
+  #  百度    谷歌
+  your_choice: "谷歌"
+  # 百度翻译
+  baidu:
+    # 你的百度翻译ApiKeys
+    apikey: ""
+    # 你百度翻译的secretKey
+    api_secret: ""
+
+  google:
+    # google免费翻译接口，可能需要代理，这种翻译方式比较缓慢，亦或随时可能不太稳定，但是依然可以用
+    # 最大尝试次数
+    try_number: 10

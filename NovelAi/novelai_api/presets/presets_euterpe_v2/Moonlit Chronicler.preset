@@ -1,0 +1,49 @@
+{
+  "presetVersion": 3,
+  "name": "Moonlit Chronicler",
+  "id": "08e2e3b3-95e1-4e89-b6cf-03ba58d06e84",
+  "remoteId": "",
+  "parameters": {
+    "textGenerationSettingsVersion": 3,
+    "temperature": 1.25,
+    "max_length": 40,
+    "min_length": 1,
+    "top_k": 300,
+    "top_p": 1,
+    "top_a": 0.782,
+    "typical_p": 0.95,
+    "tail_free_sampling": 0.802,
+    "repetition_penalty": 2.075,
+    "repetition_penalty_range": 512,
+    "repetition_penalty_slope": 0.36,
+    "repetition_penalty_frequency": 0,
+    "repetition_penalty_presence": 0,
+    "order": [
+      {
+        "id": "top_k",
+        "enabled": true
+      },
+      {
+        "id": "typical_p",
+        "enabled": true
+      },
+      {
+        "id": "top_a",
+        "enabled": true
+      },
+      {
+        "id": "tfs",
+        "enabled": true
+      },
+      {
+        "id": "temperature",
+        "enabled": true
+      },
+      {
+        "id": "top_p",
+        "enabled": false
+      }
+    ]
+  },
+  "model": "euterpe-v2"
+}
