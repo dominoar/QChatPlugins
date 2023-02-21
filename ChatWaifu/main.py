@@ -53,7 +53,7 @@ def process_mod(answer, sender_id):
             .\\plugins\\ChatWaifu\\silk-v3-decoder\\converter.sh  {voice_pcm} {voice_silk} -tencent"""
         else:
             cmd = f""".\\plugins\\ChatWaifu\\ffmpeg\\ffmpeg.exe -i {voice_wav} -f s16le {voice_pcm} & \
-            .\\plugins\\ChatWaifu\\silk-v3-decoder\\windows\\silk_v3_encoder.exe {voice_pcm} {voice_silk} -tencent"""
+            .\\plugins\\ChatWaifu\\silk-v3-decoder\\windows\\silk_v3_encoder.exe {voice_pcm} {voice_silk} -rate 24000 -tencent"""
         trans_ok = os.system(cmd)
         # 判断是否成功
         if trans_ok == 0:
